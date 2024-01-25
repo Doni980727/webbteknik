@@ -1,3 +1,8 @@
+nav {
+	font-size: large;
+	height: 3rem;
+}
+
 .navbar {
 	list-style-type: none;
 	margin: 0;
@@ -27,4 +32,19 @@
 
 .active {
 	background-color: #111;
+}
+
+#start {
+	background-image: url(/images/shayan-ramesht-exSEmuA7R7k-unsplash.jpg);
+	height: 54rem;
+}
+
+#start img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#start h1 {
+	text-align: center;
 }
