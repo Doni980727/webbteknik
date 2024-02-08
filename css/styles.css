@@ -1,29 +1,6 @@
-:root {
-	font-size: large;
-	color: #DFDFDF;
-}
-
-* {
-	box-sizing: border-box;
-  }
-  
-
-body {
-	margin: 0;
-}
-
-h1 {
-	font-family: 'Bree Serif', serif;
-}
-
-h4, h5 {
-	font-family: 'Quicksand', sans-serif;
-}
-
 nav {
 	font-size: large;
-	height: 3.18rem;
-	font-family: 'Rubik', sans-serif;
+	height: 3rem;
 }
 
 .navbar {
@@ -58,15 +35,8 @@ nav {
 }
 
 #start {
-	background-image: url(/images/Start.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	height: 51rem;
-}
-
-#start div {
-	padding-top: 15%;
+	background-image: url(/images/shayan-ramesht-exSEmuA7R7k-unsplash.jpg);
+	height: 54rem;
 }
 
 #start img {
@@ -75,7 +45,7 @@ nav {
 	margin-right: auto;
 }
 
-#start h1 {
+#start h1, h5 {
 	text-align: center;
 }
 
