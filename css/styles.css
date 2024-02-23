@@ -262,17 +262,33 @@ tr.theader {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	height: 38.3rem;
+	min-height: 38.3rem;
 	padding-top: 3.18rem;
-	display: grid;
-	grid-template-columns: auto auto;
+	height: auto;
+	padding-bottom: 1.2rem;
 }
 
-#info div {
+.cards {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 	width: 80%;
+	margin: 0 auto;
+}
+
+.card {
 	background-color: rgba(23, 23, 23, 0.5);
-	margin: 0 auto 0;
-	padding: 1.5rem;
+	padding: 1.2rem;
+}
+
+.video {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+video {
+	max-width: 100%;
+	height: auto;
 }
 
 footer {
@@ -304,6 +320,7 @@ footer h5 {
 
 	.menu-button-container {
 		display: flex;
+		margin-left: 1rem;
 	}
 
 	.navbar {
@@ -383,6 +400,11 @@ footer h5 {
 	.hidden {
 		display: none;
 	}
+
+	.cards {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
 }
 
 @media only screen and (min-width: 1200px) {
