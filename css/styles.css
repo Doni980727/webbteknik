@@ -218,6 +218,7 @@ div.gallery img {
 	background-position: center;
 	background-size: cover;
 	padding-top: 3.18rem;
+	padding-bottom: 2.4rem;
 }
 
 #menu table {
@@ -225,6 +226,7 @@ div.gallery img {
 	margin-right: auto;
 	background-color: rgba(20, 22, 39, 0.75);
 	border-collapse: collapse;
+	border-radius: 0.5rem;
 }
 
 tr.theader {
