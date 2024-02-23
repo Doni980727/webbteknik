@@ -272,7 +272,7 @@ tr.theader {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	width: 80%;
-	margin: 0 auto;
+	margin: 2.4rem auto;
 }
 
 .card {
