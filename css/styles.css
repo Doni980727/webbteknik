@@ -291,6 +291,98 @@ video {
 	height: auto;
 }
 
+#kontakt {
+	background-image: url(/images/contact.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 44rem;
+}
+
+#hitta {
+	background-image: url(/images/hitta.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 48rem;
+	height: auto;
+	text-align: center;
+}
+
+#map {
+	margin: 2.4rem 1.2rem 0;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+	font-family: 'Quicksand', sans-serif;
+}
+input[type=email], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+	font-family: 'Quicksand', sans-serif;
+}
+  
+label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+	font-family: 'Bree Serif', serif;
+}
+  
+input[type=submit] {
+	background-color: #da9053;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+	font-family: 'Quicksand', sans-serif;
+}
+  
+input[type=submit]:hover {
+	background-color: #ca9263;
+}
+  
+.container {
+	border-radius: 5px;
+	background-color: #363B67;
+	padding: 20px;
+	width: 40%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 2rem;
+}
+  
+.col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+}
+  
+.col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+}
+  
+/* Clear floats after the columns */
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 footer {
 	background-image: url(/images/Footer.jpg);
 	height: 20rem;
@@ -405,6 +497,11 @@ footer h5 {
 		grid-template-columns: repeat(1, 1fr);
 	}
 
+	.col-25, .col-75, input[type=submit] {
+		  width: 100%;
+		  margin-top: 0;
+	}
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -436,6 +533,14 @@ footer h5 {
 	}
 
 	#info {
+		height: 51.6rem;
+	}
+
+	#hitta {
+		height: 51.6rem;
+	}
+
+	#kontakt {
 		height: 49.6rem;
 	}
 
