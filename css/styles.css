@@ -502,6 +502,14 @@ footer h5 {
 		  margin-top: 0;
 	}
 
+	.container {
+		width: 80%;
+	}
+
+	#kontakt {
+		padding-bottom: 1.8rem;
+	}
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -546,5 +554,15 @@ footer h5 {
 
 	footer {
 		height: 22rem;
+	}
+}
+
+@media print {
+	nav {
+		display: none;
+	}
+
+	#menu {
+		padding-top: 0;
 	}
 }
