@@ -311,6 +311,11 @@ video {
 	text-align: center;
 }
 
+#hitta a {
+	text-decoration: underline;
+	color: white;
+}
+
 #map {
 	margin: 2.4rem 1.2rem 0;
 	display: flex;
