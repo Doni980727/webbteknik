@@ -572,4 +572,8 @@ footer h5 {
 	#menu {
 		padding-top: 0;
 	}
+
+	footer {
+		display: none;
+	}
 }
