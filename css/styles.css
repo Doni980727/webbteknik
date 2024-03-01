@@ -408,7 +408,7 @@ footer h5 {
 	margin-top: 0px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1200px) {
 	#number1 {
 		visibility: visible;
 	}
