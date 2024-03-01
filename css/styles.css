@@ -144,11 +144,7 @@ main {
 	margin-right: auto;
 }
 
-#start h1 {
-	text-align: center;
-}
-
-#start h4 {
+#start h1, h4 {
 	text-align: center;
 }
 
