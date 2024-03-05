@@ -404,7 +404,7 @@ footer h5 {
 	margin-top: 0px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 720px) {
 	#number1 {
 		visibility: visible;
 	}
@@ -498,19 +498,22 @@ footer h5 {
 	.cards {
 		grid-template-columns: repeat(1, 1fr);
 	}
+	
+}
 
+@media only screen and (max-width: 1100px) {
 	.col-25, .col-75, input[type=submit] {
-		  width: 100%;
-		  margin-top: 0;
-	}
+		width: 100%;
+		margin-top: 0;
+      }
 
-	.container {
-		width: 80%;
-	}
+      .container {
+	      width: 80%;
+      }
 
-	#kontakt {
-		padding-bottom: 1.8rem;
-	}
+      #kontakt {
+	padding-bottom: 1.8rem;
+}
 
 }
 
