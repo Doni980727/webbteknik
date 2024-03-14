@@ -5,8 +5,8 @@
 
 * {
 	box-sizing: border-box;
-  }
-  
+}
+
 
 body {
 	margin: 0;
@@ -16,7 +16,8 @@ h1 {
 	font-family: 'Bree Serif', serif;
 }
 
-h4, h5 {
+h4,
+h5 {
 	font-family: 'Quicksand', sans-serif;
 }
 
@@ -77,11 +78,11 @@ nav h5 {
 	justify-content: center;
 	align-items: center;
 }
-  
+
 #menu-toggle {
 	display: none;
 }
-  
+
 .menu-button,
 .menu-button::before,
 .menu-button::after {
@@ -93,27 +94,27 @@ nav h5 {
 	transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
 	border-radius: 2px;
 }
-  
+
 .menu-button::before {
 	content: '';
 	margin-top: -8px;
 }
-  
+
 .menu-button::after {
 	content: '';
 	margin-top: 8px;
 }
-  
-#menu-toggle:checked + .menu-button-container .menu-button::before {
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
 	margin-top: 0px;
 	transform: rotate(405deg);
 }
-  
-#menu-toggle:checked + .menu-button-container .menu-button {
+
+#menu-toggle:checked+.menu-button-container .menu-button {
 	background: rgba(255, 255, 255, 0);
 }
-  
-#menu-toggle:checked + .menu-button-container .menu-button::after {
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
 	margin-top: 0px;
 	transform: rotate(-405deg);
 }
@@ -144,7 +145,8 @@ main {
 	margin-right: auto;
 }
 
-#start h1, h4 {
+#start h1,
+h4 {
 	text-align: center;
 }
 
@@ -173,10 +175,90 @@ main {
 	text-align: center;
 }
 
-div.gallery img {
+.wrapper {
+	width: 100%;
+	position: relative;
+}
+
+.wrapper i {
+	top: 50%;
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+	font-size: 1.25rem;
+	position: absolute;
+	text-align: center;
+	line-height: 50px;
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+	transform: translateY(-50%);
+	transition: transform 0.1s linear;
+	color: #1a1c2d;
+}
+
+.wrapper i:active {
+	transform: translateY(-50%) scale(0.85);
+}
+
+.wrapper i:first-child {
+	left: -22px;
+}
+
+.wrapper i:last-child {
+	right: -22px;
+}
+
+.wrapper .carousel {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: calc((100% / 4));
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	gap: 16px;
+	border-radius: 8px;
+	scroll-behavior: smooth;
+	scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+	display: none;
+}
+
+.carousel.no-transition {
+	scroll-behavior: auto;
+}
+
+.carousel.dragging {
+	scroll-snap-type: none;
+	scroll-behavior: auto;
+}
+
+.carousel.dragging .img {
+	cursor: grab;
+	user-select: none;
+}
+
+.carousel :where(.img) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.carousel .img {
+	scroll-snap-align: start;
+	list-style: none;
+	background: #fff;
+	cursor: pointer;
+	flex-direction: column;
+	border-radius: 8px;
+}
+
+.img img {
+	object-fit: cover;
 	width: 100%;
 	height: 35vh;
-	object-fit: cover;
+	border-radius: 8px;
 }
 
 #lunch {
@@ -200,12 +282,6 @@ div.gallery img {
 	object-fit: cover;
 	float: left;
 	margin-right: 2.5rem;
-}
-
-.responsive {
-	padding: 0 6px;
-	float: left;
-	width: 24.99999%;
 }
 
 #menu {
@@ -280,8 +356,8 @@ tr.theader {
 
 .video {
 	display: flex;
-  	align-items: center;
-  	justify-content: center;
+	align-items: center;
+	justify-content: center;
 }
 
 video {
@@ -315,11 +391,13 @@ video {
 #map {
 	margin: 2.4rem 1.2rem 0;
 	display: flex;
-  	align-items: center;
-  	justify-content: center;
+	align-items: center;
+	justify-content: center;
 }
 
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
@@ -327,7 +405,10 @@ input[type=text], select, textarea {
 	resize: vertical;
 	font-family: 'Quicksand', sans-serif;
 }
-input[type=email], select, textarea {
+
+input[type=email],
+select,
+textarea {
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
@@ -335,13 +416,13 @@ input[type=email], select, textarea {
 	resize: vertical;
 	font-family: 'Quicksand', sans-serif;
 }
-  
+
 label {
 	padding: 12px 12px 12px 0;
 	display: inline-block;
 	font-family: 'Bree Serif', serif;
 }
-  
+
 input[type=submit] {
 	background-color: #da9053;
 	color: white;
@@ -352,11 +433,11 @@ input[type=submit] {
 	float: right;
 	font-family: 'Quicksand', sans-serif;
 }
-  
+
 input[type=submit]:hover {
 	background-color: #ca9263;
 }
-  
+
 .container {
 	border-radius: 5px;
 	background-color: #363B67;
@@ -366,19 +447,19 @@ input[type=submit]:hover {
 	margin-left: auto;
 	margin-top: 2rem;
 }
-  
+
 .col-25 {
 	float: left;
 	width: 25%;
 	margin-top: 6px;
 }
-  
+
 .col-75 {
 	float: left;
 	width: 75%;
 	margin-top: 6px;
 }
-  
+
 /* Clear floats after the columns */
 .row::after {
 	content: "";
@@ -404,7 +485,7 @@ footer h5 {
 	margin-top: 0px;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 900px) {
 	#number1 {
 		visibility: visible;
 	}
@@ -429,8 +510,8 @@ footer h5 {
 		z-index: 2;
 		display: flex;
 	}
-	
-	#menu-toggle ~ .navbar li {
+
+	#menu-toggle~.navbar li {
 		height: 0;
 		margin: 0;
 		padding: 0;
@@ -440,7 +521,7 @@ footer h5 {
 		display: flex;
 	}
 
-	#menu-toggle:checked ~ .navbar li {
+	#menu-toggle:checked~.navbar li {
 		border: 1px solid #1a1c2d;
 		height: 4rem;
 		padding: 0.5em;
@@ -449,7 +530,7 @@ footer h5 {
 		display: flex;
 	}
 
-	.navbar > li {
+	.navbar>li {
 		display: flex;
 		justify-content: center;
 		margin: 0;
@@ -460,11 +541,11 @@ footer h5 {
 		z-index: 2;
 	}
 
-	.navbar > li:not(:last-child) {
+	.navbar>li:not(:last-child) {
 		border-bottom: 1px solid #444;
 		z-index: 2;
 	}
-	
+
 	#start div {
 		padding-top: 55%;
 	}
@@ -472,6 +553,10 @@ footer h5 {
 	#content {
 		height: 80rem;
 		padding-top: 0;
+	}
+
+	.wrapper .carousel {
+		grid-auto-columns: calc((110%)/2);
 	}
 
 	.responsive {
@@ -491,29 +576,34 @@ footer h5 {
 		width: 100%;
 	}
 
-	.hidden {
-		display: none;
-	}
-
 	.cards {
 		grid-template-columns: repeat(1, 1fr);
 	}
-	
+
+}
+
+@media only screen and (max-width: 600px) {
+	.wrapper .carousel {
+		grid-auto-columns: 120%;
+	}
 }
 
 @media only screen and (max-width: 1100px) {
-	.col-25, .col-75, input[type=submit] {
+
+	.col-25,
+	.col-75,
+	input[type=submit] {
 		width: 100%;
 		margin-top: 0;
-      }
+	}
 
-      .container {
-	      width: 80%;
-      }
+	.container {
+		width: 80%;
+	}
 
-      #kontakt {
-	padding-bottom: 1.8rem;
-}
+	#kontakt {
+		padding-bottom: 1.8rem;
+	}
 
 }
 
@@ -525,14 +615,14 @@ footer h5 {
 	#start div {
 		padding-top: 15%;
 	}
-	
+
 }
 
 @media only screen and (min-width: 2000px) {
 	#start {
 		height: 68.5rem;
 	}
-	
+
 	#content {
 		height: 85rem;
 	}

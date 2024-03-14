@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script src="js/helloworld.js"></script>
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Dino Felarca">
 	<meta name="keywords" content="Pizzeria, Kebab, Restaurang, Pizzeria Umeå, Kebab Umeå, Restaurang Umeå">
-	<meta name="description" content="Välkommen till Gammlia Pizzeria! Vi serverar autentisk och smakrik pizza med färska ingredienser och kreativitet. Från klassiker som Margherita till våra egna signaturrätter, varje tugga tar dig på en resa till Italien. Kom och njut av äkta smaker och gästvänlig service hos oss! Buon appetito!">
+	<meta name="description"
+		content="Välkommen till Gammlia Pizzeria! Vi serverar autentisk och smakrik pizza med färska ingredienser och kreativitet. Från klassiker som Margherita till våra egna signaturrätter, varje tugga tar dig på en resa till Italien. Kom och njut av äkta smaker och gästvänlig service hos oss! Buon appetito!">
 	<link rel="stylesheet" href="/css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Quicksand&family=Rubik:wght@500&display=swap" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Quicksand&family=Rubik:wght@500&display=swap"
+		rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/helloworld.js"></script>
+	<script src="js/imageCarousel.js" defer></script>
 
 	<title>Gammlia Pizzeria</title>
 </head>
+
 <body>
 
 	<nav>
 		<h5 id="number1">090-77 53 95</h5>
 		<input id="menu-toggle" type="checkbox" />
-    	<label class='menu-button-container' for="menu-toggle">
-    		<span class='menu-button'></span>
-  		</label>
+		<label class='menu-button-container' for="menu-toggle">
+			<span class='menu-button'></span>
+		</label>
 		<ul class="navbar">
 			<li><a class="active" href="index.html">Hem</a></li>
 			<li><a href="menu.html">Meny</a></li>
@@ -51,36 +57,44 @@
 				<h1><button onclick="helloWorld()">Click me!</button></h1>
 				<h1>Bildgalleri</h1>
 
-				<div class="responsive">
-					<div class="gallery">
-						<img src="images/carousel/Pizza.jpg" alt="Pizza">
-					</div>
+				<div class="wrapper">
+
+					<i id="left" class="fa-solid fa-angle-left"></i>
+
+					<ul class="carousel">
+						<li class="img">
+							<img src="/images/carousel/Pizza.jpg" alt="Pizza" draggable="false">
+						</li>
+						<li class="img">
+							<img src="/images/carousel/Kebab.jpg" alt="Kebab" draggable="false">
+						</li>
+						<li class="img">
+							<img src="/images/carousel/Hamburgare.jpg" alt="Hamburgare" draggable="false">
+						</li>
+						<li class="img">
+							<img src="/images/carousel/Salad.jpg" alt="Salad" draggable="false">
+						</li>
+						<li class="img">
+							<img src="/images/carousel/Pizza2.jpg" alt="Pizza2" draggable="false">
+						</li>
+						<li class="img">
+							<img src="/images/carousel/Fries.jpg" alt="Fries" draggable="false">
+						</li>
+					</ul>
+
+					<i id="right" class="fa-solid fa-angle-right"></i>
+
 				</div>
 
-				<div class="responsive hidden">
-					<div class="gallery">
-						<img src="images/carousel/Kebab.jpg" alt="Kebab">
-					</div>
-				</div>
-
-				<div class="responsive hidden">
-					<div class="gallery">
-						<img src="images/carousel/Hamburgare.jpg" alt="Hamburgare">
-					</div>
-				</div>
-
-				<div class="responsive hidden">
-					<div class="gallery">
-						<img src="images/carousel/Salad.jpg" alt="Salad">
-					</div>
-				</div>
 			</div>
 
 			<div id="lunch">
-				
+
 				<img src="images/carousel/dagens.jpg" alt="Dagens">
 				<h1>Dagens Lunch</h1>
-				<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero est rerum necessitatibus, distinctio veniam quia. Velit vitae eius sit dolores vel aliquam dolor, quaerat iure enim, placeat voluptatum, inventore quidem.</h4>
+				<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero est rerum necessitatibus, distinctio
+					veniam quia. Velit vitae eius sit dolores vel aliquam dolor, quaerat iure enim, placeat voluptatum,
+					inventore quidem.</h4>
 
 			</div>
 
@@ -96,11 +110,12 @@
 			<h5>090-77 53 05<br>info@gammliapizzeria.se</h5>
 			<h4>Öppettider:</h4>
 			<h5>Mån - Tors 10.30 - 20.00<br>
-			Fre 10.00 - 20.00<br>
-			Lör - Sön 12.00 - 20.00</h5>
+				Fre 10.00 - 20.00<br>
+				Lör - Sön 12.00 - 20.00</h5>
 		</div>
 
 	</footer>
-	
+
 </body>
+
 </html>
