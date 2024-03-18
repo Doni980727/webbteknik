@@ -16,8 +16,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Quicksand&family=Rubik:wght@500&display=swap"
 		rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
 	<script src="js/helloworld.js"></script>
 	<script src="js/imageCarousel.js" defer></script>
+	<script src="js/fadeToggle.js"></script>
+	<script src="js/fontSize.js"></script>
+	<script src="js/onMouseOver.js"></script>
 
 	<title>Gammlia Pizzeria</title>
 </head>
@@ -54,7 +58,7 @@
 		<section id="content">
 
 			<div id="images">
-				<h1><button onclick="helloWorld()">Click me!</button></h1>
+				<button onclick="helloWorld()">Click me!</button>
 				<h1>Bildgalleri</h1>
 
 				<div class="wrapper">
@@ -86,15 +90,22 @@
 
 				</div>
 
+				<button id="fadeToggle">Dagens lunch</button>
+
 			</div>
 
 			<div id="lunch">
 
-				<img src="images/carousel/dagens.jpg" alt="Dagens">
+				<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/carousel/dagens.jpg" alt="Dagens">
 				<h1>Dagens Lunch</h1>
 				<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero est rerum necessitatibus, distinctio
 					veniam quia. Velit vitae eius sit dolores vel aliquam dolor, quaerat iure enim, placeat voluptatum,
 					inventore quidem.</h4>
+
+				<h4>Textstorlek:
+					<button id="bigger">Öka</button>
+					<button id="smaller">Minska</button>
+				</h4>
 
 			</div>
 

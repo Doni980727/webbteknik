@@ -145,18 +145,19 @@ main {
 	margin-right: auto;
 }
 
-#start h1,
+#start, h1
 h4 {
 	text-align: center;
 }
 
 #content {
 	background-image: url(/images/Content.jpg);
-	height: 70rem;
+	height: auto;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	padding-top: 5rem;
+	padding-bottom: 5rem;
 }
 
 #images {
@@ -164,10 +165,11 @@ h4 {
 	margin-left: auto;
 	margin-right: auto;
 	background-color: rgba(23, 23, 23, 0.5);
-	height: 30rem;
+	height: 35rem;
 	padding-top: 5rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
+	text-align: center;
 }
 
 #images h1 {
@@ -270,6 +272,7 @@ h4 {
 	padding-top: 5rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
+	display: none;
 }
 
 #lunch h1 {
@@ -551,7 +554,6 @@ footer h5 {
 	}
 
 	#content {
-		height: 80rem;
 		padding-top: 0;
 	}
 
@@ -621,10 +623,6 @@ footer h5 {
 @media only screen and (min-width: 2000px) {
 	#start {
 		height: 68.5rem;
-	}
-
-	#content {
-		height: 85rem;
 	}
 
 	#images {
